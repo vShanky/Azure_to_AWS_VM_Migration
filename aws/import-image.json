@@ -1,0 +1,10 @@
+[
+  {
+    "Description": "Ubuntu VM from Azure",
+    "Format": "VHD",
+    "UserBucket": {
+      "S3Bucket": "mybucket",
+      "S3Key": "myvm.vhd"
+    }
+  }
+]
