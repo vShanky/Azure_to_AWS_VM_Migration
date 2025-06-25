@@ -64,7 +64,7 @@ Then fill in your AWS credentials.
 
 **Shashank Tijare**  
 *DevOps Engineer | Cloud Infra | Automation Enthusiast*  
-📧 [LinkedIn/GitHub links here]
+📧 https://www.linkedin.com/in/shashank-tijare-75783314b/
 
 ---
 
