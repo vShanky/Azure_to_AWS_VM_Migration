@@ -1,7 +1,6 @@
 # 🚀 Azure to AWS Ubuntu VM Migration (Using VHD & Terraform)
 
-[![CI/CD](https://github.com/your-username/azure-to-aws-vm-migration/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-username/azure-to-aws-vm-migration/actions)
-[![License](https://img.shields.io/github/license/your-username/azure-to-aws-vm-migration)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4)](https://www.terraform.io/)
 
 This project demonstrates how to migrate an Ubuntu VM from **Microsoft Azure** to **AWS EC2**, using snapshot-based export, AzCopy, `aws ec2 import-image`, and deploying the final AMI using **Terraform**.
@@ -12,11 +11,10 @@ This project demonstrates how to migrate an Ubuntu VM from **Microsoft Azure** t
 
 ## 🧰 Tools & Technologies Used
 
-- 🧪 Azure CLI
-- 🚀 AzCopy
-- ☁️ AWS CLI
+- 🧪 Azure CLI  
+- 🚀 AzCopy  
+- ☁️ AWS CLI  
 - 🏗 Terraform (IaC)
-- 🔁 GitHub Actions (CI/CD)
 
 ---
 
@@ -27,7 +25,6 @@ This project demonstrates how to migrate an Ubuntu VM from **Microsoft Azure** t
 | `azure/`       | Scripts for preparing and exporting Azure VM          |
 | `aws/`         | Scripts for importing VHD to AWS & defining AMI       |
 | `terraform/`   | Terraform code to deploy EC2 instance from AMI        |
-| `.github/`     | GitHub Actions workflow for automation                |
 | `docs/`        | Step-by-step documentation (screenshots, diagrams)    |
 | `.env.sample`  | Environment variable template                         |
 
@@ -35,12 +32,11 @@ This project demonstrates how to migrate an Ubuntu VM from **Microsoft Azure** t
 
 ## 🔁 Full Migration Workflow
 
-1. ✅ **Deprovision Azure VM** using `waagent`
-2. ☁️ **Export VM as VHD** to Azure Blob Storage
-3. 🚚 **Copy VHD to AWS S3** using AzCopy
-4. 📥 **Register AMI** using `aws ec2 import-image`
-5. ⚙️ **Deploy EC2 instance** via Terraform
-6. 🔄 **Automate with GitHub Actions**
+1. ✅ **Deprovision Azure VM** using `waagent`  
+2. ☁️ **Export VM as VHD** to Azure Blob Storage  
+3. 🚚 **Copy VHD to AWS S3** using AzCopy  
+4. 📥 **Register AMI** using `aws ec2 import-image`  
+5. ⚙️ **Deploy EC2 instance** via Terraform  
 
 ---
 
@@ -79,19 +75,7 @@ terraform apply
 
 ---
 
-## 🤖 GitHub Actions CI/CD
-
-This repo includes a GitHub Actions pipeline that:
-
-- Validates Terraform config
-- Applies changes when triggered
-- Can be triggered on push or manually
-
-> Configure secrets under GitHub → Settings → Secrets
-
----
-
-## 📈 Diagram
+## 📈 Migration Diagram
 
 ```mermaid
 graph TD
